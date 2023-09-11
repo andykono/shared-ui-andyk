@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import alias from './aliases';
@@ -11,18 +11,16 @@ export default defineConfig({
   },
   build:{
     lib: {
-      // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'shared-ui-andyk',
       formats: ['es'],
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
       external: ['vue'],
       output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
+        preserveModules: true,
+        entryFileNames: '[name].vue.js',
+        assetFileNames: 'assets/[name].[ext]',
         globals: {
           vue: 'Vue',
         },
