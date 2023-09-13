@@ -1,0 +1,90 @@
+@forward "vars/fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.font-title {
+  @extend %font-title;
+}
+
+.font-heading-1 {
+  @extend %font-heading-1;
+}
+
+.font-heading-2 {
+  @extend %font-heading-2;
+}
+
+.font-heading-3 {
+  @extend %font-heading-3;
+}
+
+.font-heading-4 {
+  @extend %font-heading-4;
+}
+
+.font-heading-5 {
+  @extend %font-heading-5;
+}
+
+.font-heading-6 {
+  @extend %font-heading-6;
+}
+
+.font-body-1 {
+  @extend %font-body-1;
+}
+
+.font-body-2 {
+  @extend %font-body-2;
+}
+
+.font-subtitle-1 {
+  @extend %font-subtitle-1;
+}
+
+.font-subtitle-2 {
+  @extend %font-subtitle-2;
+}
+
+.font-chart-1 {
+  @extend %font-chart-1;
+}
+
+.font-chart-2 {
+  @extend %font-chart-2;
+}
+
+.font-button {
+  @extend %font-button;
+}
+
+.font-overline {
+  @extend %font-overline;
+}
+
+.font-caption {
+  @extend %font-caption;
+}
+
+.font-table-header {
+  @extend %font-table-header;
+}
+
+.font-input-label {
+  @extend %font-input-label;
+}
+
+.font-tab-label {
+  @extend %font-tab-label;
+}
+
+.font-chip-label {
+  @extend %font-chip-label;
+}

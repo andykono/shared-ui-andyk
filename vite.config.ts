@@ -21,13 +21,22 @@ export default defineConfig({
                 {
                     src: './README.md',
                     dest: './',
-                }
+                },
+                {
+                    src: './src/styles/scss/',
+                    dest: './styles/',
+                },
             ],
         }),],
     resolve: {
         alias,
     },
     build: {
+        outDir: './dist',
+        assetsDir: './src/assets',
+        emptyOutDir: true,
+        target: 'esnext',
+        cssCodeSplit: true,
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
             name: 'shared-ui-andyk',
@@ -44,7 +53,5 @@ export default defineConfig({
                 },
             },
         },
-        target: 'esnext',
-        cssCodeSplit: true,
     }
 })
