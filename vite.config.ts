@@ -47,7 +47,6 @@ export default defineConfig({
             output: {
                 preserveModules: true,
                 entryFileNames: '[name].vue.js',
-                assetFileNames: 'assets/[name].[ext]',
                 globals: {
                     vue: 'Vue',
                 },

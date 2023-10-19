@@ -53,7 +53,7 @@ const onClick = () => {
 
 .storybook-button--primary {
   background-color: #1ea7fd;
-  border-color: #1ea7fd;
+  border-color: #005c8a;
   color: white;
 }
 
