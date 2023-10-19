@@ -47,6 +47,14 @@ const onClick = () => {
 </script>
 
 <style scoped lang="scss">
+.storybook-button {
+  padding: 1rem;
+}
 
+.storybook-button--primary {
+  background-color: #1ea7fd;
+  border-color: #1ea7fd;
+  color: white;
+}
 
 </style>
